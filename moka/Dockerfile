@@ -40,7 +40,7 @@ COPY ./cert var/www/aw-landingpager-server/cert
 # Copy over the wsgi file
 RUN mkdir /var/www/aw-landingpager-server
 COPY ./lpager_server.wsgi /var/www/aw-landingpager-server/lpager_server.wsgi
-COPY ./main_be.py /var/www/main_be.py.py
+COPY ./main_be.py  /var/www/aw-landingpager-server/main_be.py.py
 
 
 RUN a2dissite 000-default.conf
